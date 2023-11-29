@@ -1,0 +1,90 @@
+.embla {
+    overflow: hidden;
+}
+
+.embla__container {
+    display: flex;
+    gap: 2rem;
+    padding: 0 3rem;
+    width: 70%;
+    color: rgba(255, 255, 255, 0.6);
+}
+
+.embla__slide {
+    position: relative;
+    width: 100%;
+    min-width: 70%;
+    /* Ensure the video container takes the full width */
+    height: auto;
+    /* Allow height to adjust based on aspect ratio */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+video {
+    border-radius: 1rem;
+    border: 1px solid #4db5ff;
+}
+
+.git_btn {
+    display: flex;
+    padding: 1rem;
+    justify-content: center;
+    margin-top: 10px;
+
+}
+
+@media screen and (max-width: 600px) {
+    .embla__slide {
+        position: relative;
+        width: 100%;
+        min-width: 70%;
+        /* Ensure the video container takes the full width */
+        height: auto;
+        /* Allow height to adjust based on aspect ratio */
+        display: flex;
+        justify-content: center;
+        padding: auto;
+        align-items: center;
+    }
+    
+    .section-title {
+        margin-top: 20px;
+        /* Adjust spacing as needed */
+        text-align: center;
+        font-size: medium;
+        color: white;
+    }
+    
+    .project_name {
+        font-size: 12px;
+    }
+
+}
+
+.section-title {
+    margin-top: 20px;
+    /* Adjust spacing as needed */
+    text-align: center;
+    color: white;
+}
+
+.section-subtitle {
+    text-align: center;
+    color: white;
+}
+
+.cont {
+    /* Adjust spacing between sections */
+    background-color: black;
+    /* Set the background color to black */
+    padding: 20px;
+    /* Add padding for better readability */
+}
+
+.project_name {
+    margin-top: 15px;
+    /* Adjust spacing between title and video */
+    color: white;
+}

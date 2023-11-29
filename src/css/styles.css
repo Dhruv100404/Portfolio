@@ -1,0 +1,126 @@
+swiper {
+    width: 100%;
+    height: 100%;
+}
+
+.swiper-slide {
+    text-align: center;
+    font-size: 18px;
+    background: black;
+
+    /* Center slide text vertically */
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    -webkit-justify-content: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    -webkit-align-items: center;
+    align-items: center;
+}
+
+.swiper-slide img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.img-box:hover .p {
+    top: 0;
+}
+
+.p {
+    transition: 0.5s all;
+}
+
+/* Add this to your existing CSS file or styles.css */
+
+/* For smaller screens (lg:hidden) */
+.navbarcon {
+    position: fixed;
+}
+
+/* Adjust other styles as needed */
+/* Example: If you want to hide the navbar on smaller screens when toggled */
+@media (max-width: 1024px) {
+    .navbarcon {
+        display: none;
+    }
+}
+
+
+.banner-astronout {
+    position: absolute;
+    animation: astronout 2s infinite alternate linear;
+    -webkit-animation: astronout 4s infinite alternate linear;
+    width: 300px;
+}
+
+.banner-astronout1 {
+    position: absolute;
+    animation: astronout1 2s infinite alternate linear;
+    -webkit-animation: astronout1 4s infinite alternate linear;
+    width: 300px;
+}
+
+@keyframes astronout1 {
+    0% {
+        left: 70%;
+        top: 25%;
+    }
+
+    100% {
+        left: 60%;
+        top: 35%;
+    }
+}
+
+
+@keyframes astronout {
+    0% {
+        left: 50%;
+        top: 45%;
+    }
+
+    100% {
+        left: 40%;
+        top: 35%;
+    }
+}
+
+.bla {
+    transition: transform ease .4s;
+    padding: 0 10px;
+
+}
+
+.bla a {
+    text-decoration: none;
+    /* Add any other styling for the links */
+}
+
+
+.bla:hover {
+    transform: scale(1.3);
+}
+
+.section-container {
+    background-color: black;
+    /* Add any other styles you need for this section */
+}
+
+.section-container h1,
+.section-container .icon {
+    /* Adjust text and icon styles for visibility on the black background */
+    color: white;
+    /* Set text/icon color to white for better visibility */
+}
+
+.footer_copyright p{
+    color: white;
+}
